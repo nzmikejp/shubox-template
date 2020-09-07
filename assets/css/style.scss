@@ -29,6 +29,12 @@ $s-border-radius: 0.31em;
 $btn-border-radius: 0.31em; 
 $type-border-radius: 0.25em;
 
+@mixin intro-images($size) {
+    background-size: $size;
+    background-position: center 101%;
+    background-repeat: no-repeat;
+}
+
 
 * {
     box-sizing: border-box;
@@ -60,6 +66,7 @@ body {
 .wrap {
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 main {
@@ -77,7 +84,14 @@ main {
 }
 
 .section-1 {
-    background-color: gold;
+    background-color: $dark-color;
+    background-image: url(../images/shoe-intro.png);
+    @include intro-images(120%);
+    position: relative;
+
+    &:after {
+        content: url('../images/harftone-bg.svg');
+    }
 }
 
 .section-2 {
