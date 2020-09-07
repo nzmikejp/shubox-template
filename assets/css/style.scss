@@ -3,11 +3,56 @@
 @import url('https://unpkg.com/purecss@2.0.3/build/pure-min.css');
 
 $primary-font: 'Poppins', sans-serif;
+$font-bold: 700;
+$font-normal: 400;
+$font-semi-bold: 600;
+
+$light-color: #fff;
+$dark-color: #191919;
+$dark-gray: #414141;  
+$med-gray: #696969;
+$light-gray: #afafaf;
+$red-accent: #c50308;
+$green-accent: #8aba00;
+
+$red-gradient: linear-gradient(180deg, #191919 0%, #C50308 190.45%);
+$gray-item-gradient: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);
+$gary-page-gradient: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);
+
+$box-shadow-top: 0px -0.31em 0.31em rgba(0, 0, 0, 0.25);
+
+$l-border-radius-top: 1.375em 1.375em 0 0;
+$l-border-radius-bottom: 1.375em 1.375em 0 0;
+$m-border-radius: 0.5em;
+$s-border-radius: 0.31em;
+
+$btn-border-radius: 0.31em; 
+$type-border-radius: 0.25em;
+
 
 * {
     box-sizing: border-box;
 }
 
+h1 {
+    font-weight: $font-bold;
+    color: $dark-gray;
+    font-size: 1.2em;
+}
+
+h2 {
+    color: $light-gray;
+    font-size: 0.81em;
+    font-weight: $font-normal;
+}
+
+p {
+    color: $dark-color;
+    font-size: 0.6em;
+    letter-spacing: -0.03em;
+    line-height: 1.37;
+}
+       
 body {
     font-family: $primary-font;
 }

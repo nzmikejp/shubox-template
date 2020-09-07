@@ -6,6 +6,25 @@
           box-sizing: border-box;
 }
 
+h1 {
+  font-weight: 700;
+  color: #414141;
+  font-size: 1.2em;
+}
+
+h2 {
+  color: #afafaf;
+  font-size: 0.81em;
+  font-weight: 400;
+}
+
+p {
+  color: #191919;
+  font-size: 0.6em;
+  letter-spacing: -0.03em;
+  line-height: 1.37;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
