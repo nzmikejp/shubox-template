@@ -79,3 +79,63 @@
     padding: 0.6em;
     margin-top: 0.5em;
 }
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: $red-accent;
+    border-radius: $l-border-radius-top;
+    
+    
+    .user-info {
+        height: 2.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .user-profile {
+        flex: 1 0 auto;
+        padding-left: 1em;
+
+        .profile-image {
+            width: 1.66em;
+            height: 1.66em;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .nav {
+       height: 5.56em;
+       background-image: $red-gradient;
+       box-shadow: $box-shadow-top;
+       border-radius: $l-border-radius-top;
+    }
+
+
+    .logo {
+        flex: 0 0 30%;
+        padding-right: 1em;
+
+        img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.footer.active {
+    z-index: 90;
+}
