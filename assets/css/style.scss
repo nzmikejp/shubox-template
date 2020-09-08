@@ -31,7 +31,7 @@
 }
 
 .section-4 {
-    background-color: blue;
+    background-color: $light-color;
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
@@ -62,7 +62,8 @@
 
             img {
                 display: block;
-                width: 50%;
+                width: 199px;
+                top: 14px;
                 margin: auto;
             }
         }
