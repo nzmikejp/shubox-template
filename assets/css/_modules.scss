@@ -2,7 +2,6 @@
     padding: 0.7em 0.85em;
     text-transform: uppercase;
     font-weight: $font-bold;
-
     color: $light-color;
     font-size: 1em;
     border-radius: $s-border-radius;
@@ -38,4 +37,45 @@
     margin: 2.7em;
     letter-spacing: 0.2px;
     text-decoration: none;
+}
+
+.pure-form {
+    width: 80%;
+}
+
+.form-group {
+    label {
+        color: $light-color;
+        text-transform: uppercase;
+        font-size: 0.75em;
+        padding-left: 0.5em;
+    }
+
+    input {
+        width: 100%;
+
+        &::placeholder {
+            text-transform: uppercase;
+            font-size: 0.75em;
+        }
+    }
+
+    .signup-link {
+        display: block;
+    }
+}
+
+.with-btn {
+    text-align: center;
+}
+
+.form-group:not(:first-child) {
+    margin-top: 1em;
+}
+
+.pure-form input[type=text], .pure-form input[type=password] {
+    border: none;
+    box-shadow: none;
+    padding: 0.6em;
+    margin-top: 0.5em;
 }
