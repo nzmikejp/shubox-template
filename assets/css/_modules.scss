@@ -98,7 +98,9 @@
 
     .user-profile {
         flex: 1 0 auto;
-        padding-left: 1em;
+        padding-left: 1.2em;
+        display: flex;
+        align-items: center;
 
         .profile-image {
             width: 1.66em;
@@ -114,19 +116,21 @@
                 width: 100%;
             }
         }
-    }
 
-    .nav {
-       height: 5.56em;
-       background-image: $red-gradient;
-       box-shadow: $box-shadow-top;
-       border-radius: $l-border-radius-top;
-    }
+        .profile-image + p {
+            padding-left: 1em;
+            color: $light-color;
+            font-size: 0.7em;
 
+            span {
+                font-weight: $font-bold;
+            }
+        }
+    }
 
     .logo {
         flex: 0 0 30%;
-        padding-right: 1em;
+        padding-right: 1.2em;
 
         img {
             display: block;
@@ -134,6 +138,24 @@
             margin: 0 auto;
         }
     }
+
+    .nav {
+       height: 5.56em;
+       background-image: $red-gradient;
+       box-shadow: $box-shadow-top;
+       border-radius: $l-border-radius-top;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 0 2.3em;
+
+       i {
+           color: $light-color;
+           font-size: 1.93em;
+       }
+    }
+
+
 }
 
 .footer.active {

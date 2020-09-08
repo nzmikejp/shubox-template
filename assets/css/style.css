@@ -175,7 +175,13 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  padding-left: 1em;
+  padding-left: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer .user-profile .profile-image {
@@ -199,6 +205,29 @@ main {
   width: 100%;
 }
 
+.footer .user-profile .profile-image + p {
+  padding-left: 1em;
+  color: #fff;
+  font-size: 0.7em;
+}
+
+.footer .user-profile .profile-image + p span {
+  font-weight: 700;
+}
+
+.footer .logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  padding-right: 1.2em;
+}
+
+.footer .logo img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .footer .nav {
   height: 5.56em;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#191919), color-stop(190.45%, #c50308));
@@ -206,19 +235,21 @@ main {
   -webkit-box-shadow: 0px -0.31em 0.31em rgba(0, 0, 0, 0.25);
           box-shadow: 0px -0.31em 0.31em rgba(0, 0, 0, 0.25);
   border-radius: 1.375em 1.375em 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2.3em;
 }
 
-.footer .logo {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
-  padding-right: 1em;
-}
-
-.footer .logo img {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
+.footer .nav i {
+  color: #fff;
+  font-size: 1.93em;
 }
 
 .footer.active {
@@ -339,7 +370,7 @@ main {
 }
 
 .section-8 {
-  background-color: hotpink;
+  background-color: #fff;
 }
 
 .section-9 {
