@@ -29,9 +29,9 @@ $s-border-radius: 0.31em;
 $btn-border-radius: 0.31em; 
 $type-border-radius: 0.25em;
 
-@mixin intro-images($size) {
+@mixin intro-images($size, $position) {
     background-size: 100%, $size;
-    background-position: center top, center 101%;
+    background-position: center top, center $position;
     background-repeat: no-repeat;
 }
 

@@ -1,7 +1,7 @@
 @import './base', './layout', './modules';
 
 .section-1 {
-    @include intro-images(28.53em);
+    @include intro-images(28.53em, 101%);
     background-color: $dark-color; 
     background-image: url('../images/harftone-bg.svg'),
                       url('../images/shoe-intro.png');
@@ -23,11 +23,55 @@
 
 
 .section-2 {
-    background-color: pink;
+    @include intro-images(25.18em, 103%);
+    background-color: $dark-color; 
+    background-image: url('../images/harftone-bg.svg'),
+                      url('../images/boot-signin.png');
+    
+    .container {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+        margin-top: 3.625em;
+
+        img {
+            display: block;
+            max-width: 7em;
+            margin-bottom: 1em;
+        }
+
+        h1 {
+            color: $light-color;
+            margin: 0;
+        }
+    }
 }
 
 .section-3 {
-    background-color: red;
+    @include intro-images(25.18em, 101%);
+    background-color: $dark-color; 
+    background-image: url('../images/harftone-bg.svg'),
+                      url('../images/shoe-signup.png');
+    
+    .container {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+        margin-top: 3.625em;
+
+        img {
+            display: block;
+            max-width: 7em;
+            margin-bottom: 1em;
+        }
+
+        h1 {
+            color: $light-color;
+            margin: 0;
+        }
+    }
 }
 
 .section-4 {

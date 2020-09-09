@@ -94,6 +94,61 @@ main {
   text-decoration: none;
 }
 
+.pure-form {
+  width: 80%;
+}
+
+.form-group label {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-left: 0.5em;
+}
+
+.form-group input {
+  width: 100%;
+}
+
+.form-group input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.form-group input:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.form-group input::-ms-input-placeholder {
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.form-group input::placeholder {
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.form-group .signup-link {
+  display: block;
+}
+
+.with-btn {
+  text-align: center;
+}
+
+.form-group:not(:first-child) {
+  margin-top: 1em;
+}
+
+.pure-form input[type=text], .pure-form input[type=password] {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0.6em;
+  margin-top: 0.5em;
+}
+
 .section-1 {
   background-size: 100%, 28.53em;
   background-position: center top, center 101%;
@@ -124,11 +179,71 @@ main {
 }
 
 .section-2 {
-  background-color: pink;
+  background-size: 100%, 25.18em;
+  background-position: center top, center 103%;
+  background-repeat: no-repeat;
+  background-color: #191919;
+  background-image: url("../images/harftone-bg.svg"), url("../images/boot-signin.png");
+}
+
+.section-2 .container {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin-top: 3.625em;
+}
+
+.section-2 .container img {
+  display: block;
+  max-width: 7em;
+  margin-bottom: 1em;
+}
+
+.section-2 .container h1 {
+  color: #fff;
+  margin: 0;
 }
 
 .section-3 {
-  background-color: red;
+  background-size: 100%, 25.18em;
+  background-position: center top, center 101%;
+  background-repeat: no-repeat;
+  background-color: #191919;
+  background-image: url("../images/harftone-bg.svg"), url("../images/shoe-signup.png");
+}
+
+.section-3 .container {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin-top: 3.625em;
+}
+
+.section-3 .container img {
+  display: block;
+  max-width: 7em;
+  margin-bottom: 1em;
+}
+
+.section-3 .container h1 {
+  color: #fff;
+  margin: 0;
 }
 
 .section-4 {
