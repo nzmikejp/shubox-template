@@ -81,15 +81,16 @@
     flex-flow: column nowrap;
 
     .catergory{
-        background-color: white;
+        background-image: $gray-type-gradient;
         width: 355px;
         height: 153px;
         margin: 0.5em;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
-        border: thin red solid;
         position: relative;
+        padding-bottom: 0.5em;
+        border-radius: $m-border-radius;
 
         .catergory-title{
             font-weight: $font-bold;
@@ -98,16 +99,13 @@
             right: 0;
             top: 0;
             transform: translateX(-1em);
-            border: thin blue solid;
         }
 
         .catergory-image {
-            border: thin green solid;
 
             img {
                 display: block;
-                width: 199px;
-                top: 14px;
+                width: 70%;
                 margin: auto;
             }
         }
