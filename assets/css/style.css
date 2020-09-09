@@ -34,7 +34,8 @@ body {
 .app {
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 main {
@@ -147,6 +148,113 @@ main {
           box-shadow: none;
   padding: 0.6em;
   margin-top: 0.5em;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #c50308;
+  border-radius: 1.375em 1.375em 0 0;
+}
+
+.footer .user-info {
+  height: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .user-profile {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding-left: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .user-profile .profile-image {
+  width: 1.66em;
+  height: 1.66em;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .user-profile .profile-image img {
+  display: block;
+  width: 100%;
+}
+
+.footer .user-profile .profile-image + p {
+  padding-left: 1em;
+  color: #fff;
+  font-size: 0.7em;
+}
+
+.footer .user-profile .profile-image + p span {
+  font-weight: 700;
+}
+
+.footer .logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  padding-right: 1.2em;
+}
+
+.footer .logo img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer .nav {
+  height: 5.56em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#191919), color-stop(190.45%, #c50308));
+  background-image: linear-gradient(180deg, #191919 0%, #c50308 190.45%);
+  -webkit-box-shadow: 0px -0.31em 0.31em rgba(0, 0, 0, 0.25);
+          box-shadow: 0px -0.31em 0.31em rgba(0, 0, 0, 0.25);
+  border-radius: 1.375em 1.375em 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2.3em;
+}
+
+.footer .nav i {
+  color: #fff;
+  font-size: 1.93em;
+}
+
+.footer.active {
+  z-index: 90;
 }
 
 .section-1 {
@@ -313,7 +421,7 @@ main {
 }
 
 .section-8 {
-  background-color: hotpink;
+  background-color: #fff;
 }
 
 .section-9 {
@@ -326,18 +434,5 @@ main {
 
 .section.active {
   z-index: 60;
-}
-
-.footer {
-  min-height: 8.125em;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: indianred;
-}
-
-.footer.active {
-  z-index: 90;
 }
 /*# sourceMappingURL=style.css.map */

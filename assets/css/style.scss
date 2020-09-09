@@ -129,7 +129,7 @@
 }
 
 .section-8 {
-    background-color: hotpink;
+    background-color: $light-color ;
 }
 
 .section-9 {
@@ -144,15 +144,4 @@
     z-index: 60;
 }
 
-.footer {
-    min-height: 8.125em;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: indianred;
-}
 
-.footer.active {
-    z-index: 90;
-}
