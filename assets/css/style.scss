@@ -199,7 +199,57 @@
 }
 
 .section-10 {
-    background-color: teal;
+    background-color: $light-color;
+
+    .container {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+
+        img {
+            display: block;
+            max-width: 7em;
+            margin-bottom: 1em;
+        }
+
+    }
+    
+    .header {
+        background-image: $gray-item-gradient;
+        width: 100%;
+        text-align: center;
+        border-radius: $l-border-radius-bottom;
+        
+        h1 {
+            color: $dark-gray;
+            margin: 0;
+            padding-top: 2em;
+            padding-bottom: 0.8em;
+        }
+    }
+
+    .pure-form {
+        padding-top: 0.5em;
+    }
+
+    .with-btn {
+        margin: 0;
+    }
+
+    .btn {
+        box-shadow: none;
+    }
+
+    .form-group {
+        label {
+            color: $dark-gray;
+        }
+    }
+
+    .pure-form input[type=text], .pure-form input[type=password], .pure-form input[type=file], .pure-form textarea {
+        border: thin rgba(0,0,0,0.1) solid;
+    }
 }
 
 
