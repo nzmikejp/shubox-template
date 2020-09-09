@@ -29,6 +29,14 @@
     margin: 1.8em 0;
 }
 
+.divider-dark {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    margin: 1.8em 0;
+}
+
 .signup-link {
     color: $light-color;
     text-transform: uppercase;
@@ -73,11 +81,33 @@
     margin-top: 1em;
 }
 
-.pure-form input[type=text], .pure-form input[type=password] {
+.pure-form input[type=text], .pure-form input[type=password], .pure-form input[type=file], .pure-form textarea {
     border: none;
     box-shadow: none;
     padding: 0.6em;
     margin-top: 0.5em;
+}
+
+.pure-form input[type=file] {
+    color: $med-gray;
+    font-size: 0.75em;
+}
+
+.pure-form textarea {
+    width: 100%;
+    color: $med-gray;
+    text-transform: uppercase;
+    font-size: 0.75em;
+}
+
+.pure-form select {
+    border: thin rgba(0,0,0,0.1) solid;
+    box-shadow: none;
+    width: 100%;
+    height: auto;
+    color: $med-gray;
+    text-transform: uppercase;
+    font-size: 0.75em;
 }
 
 .footer {
@@ -87,6 +117,7 @@
     left: 0;
     background-color: $red-accent;
     border-radius: $l-border-radius-top;
+    display: none;
     
     
     .user-info {
@@ -159,5 +190,5 @@
 }
 
 .footer.active {
-    z-index: 90;
+    display: block;
 }
