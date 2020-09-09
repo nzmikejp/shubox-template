@@ -412,7 +412,33 @@ main {
 }
 
 .section-6 {
-  background-color: orange;
+  position: relative;
+}
+
+.section-6 .description-image {
+  position: relative;
+  z-index: 20;
+}
+
+.section-6 .description-image img {
+  display: block;
+  width: 100%;
+  border-radius: 0 0 1.375em 1.375em;
+  -webkit-box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.1);
+}
+
+.section-6 .description-wrap {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.6em;
+  margin-top: -1em;
+}
+
+.section-6 .description-container {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#F3F3F3));
+  background-image: linear-gradient(0deg, #fff 0%, #F3F3F3 100%);
+  height: 100%;
 }
 
 .section-7 {

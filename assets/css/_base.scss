@@ -17,7 +17,7 @@ $green-accent: #8aba00;
 
 $red-gradient: linear-gradient(180deg, $dark-color 0%, $red-accent 190.45%);
 $gray-item-gradient: linear-gradient(180deg, $light-color 0%, #F3F3F3 100%);
-$gray-page-gradient: linear-gradient(180deg, $light-color 0%, #F3F3F3 100%);
+$gray-page-gradient: linear-gradient(0deg, $light-color 0%, #F3F3F3 100%);
 $gray-type-gradient: linear-gradient(180deg, $light-color 26.48%, #F7F7F7 75.83%, #F0F0F0 78.77%, #E2E2E2 100%);
 
 $box-shadow-top: 0px -0.31em 0.31em rgba(0, 0, 0, 0.25);

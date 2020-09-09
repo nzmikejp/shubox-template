@@ -83,7 +83,31 @@
 }
 
 .section-6 {
-    background-color: orange;
+    position: relative;
+
+    .description-image {
+        position: relative;
+        z-index: 20;
+
+        img {
+            display: block;
+            width: 100%;
+            border-radius: $l-border-radius-bottom;
+            box-shadow: 0 0.5em 1.5em rgba(0,0,0,0.1);
+        }   
+    }
+
+    .description-wrap {
+        width: 100%;
+        height: 100%;
+        padding: 0 0.6em;
+        margin-top: -1em;
+    }
+
+    .description-container {
+        background-image: $gray-page-gradient;
+        height: 100%;
+    }
 }
 
 .section-7 {
