@@ -21,6 +21,87 @@
     background-color: $green-accent;
 }
 
+.btn-noshadow {
+    box-shadow: none;
+}
+
+.btn-round-l {
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: $light-color;
+}
+
+.btn-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(1em, 1em);
+}
+
+.btn-small {
+    font-size: 0.625em;
+}
+
+.item-price {
+    h1 {
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+
+    span {
+        font-size: 0.6em;
+        padding-right: 0.5em;
+    }
+}
+
+.type-gender {
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    color: $light-color;
+    font-size: 0.625em;
+    background-color: $red-accent;
+    display: inline-block;
+    padding: 0.6em 1em;
+    margin: 0;
+    border-radius: $m-border-radius;
+}
+
+.profile-image {
+    width: 1.66em;
+    height: 1.66em;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.profile-title {
+    background-color: $light-gray;
+    border-radius: $s-border-radius;
+    color: $light-color;
+    font-weight: $font-bold;
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    font-size: 0.35em;
+    margin: 0;
+}
+
+.profile-user {
+    margin: 0;
+}
+
+
 .divider {
     width: 100%;
     border: 0;

@@ -93,7 +93,7 @@
             display: block;
             width: 100%;
             border-radius: $l-border-radius-bottom;
-            box-shadow: 0 0.5em 1.5em rgba(0,0,0,0.1);
+            box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
         }   
     }
 
@@ -108,6 +108,74 @@
         background-image: $gray-page-gradient;
         height: 100%;
     }
+
+    .description-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2em 1em 0 1em;
+
+        h1 {
+          margin: 0;  
+        }
+        
+        h2 {
+          margin: 0;  
+        }
+    }
+
+    .description-body {
+        padding: 0.5em 1em;
+    }
+
+    .description-details {
+        padding: 0 1em;
+        display: flex;
+        align-items: center;
+
+        & > div {
+            flex: 1 0 30%;
+        }
+
+        & > div:not(:last-child) {
+            border-right: thin rgba(0,0,0,0.1) solid;
+        }
+    }
+
+    .description-buynow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description-seller {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .profile-details {
+        margin-left: 0.5em;
+    }
+
+    .divider-dark {
+        margin: 1em 0;
+    }
+
+    .description-comments {
+        padding: 0 1em;
+
+        h1 {
+            font-size: 0.75em;
+            color: $med-gray;
+            text-align: center;
+        }
+
+        .pure-form input[type=text] {
+            border: thin rgba(0,0,0,0.1) solid;
+        }
+    }
+
 }
 
 .section-7 {

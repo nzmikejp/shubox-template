@@ -2,12 +2,14 @@ h1 {
     font-weight: $font-bold;
     color: $dark-gray;
     font-size: 1.2em;
+    letter-spacing: -0.03em;
 }
 
 h2 {
     color: $light-gray;
     font-size: 0.81em;
     font-weight: $font-normal;
+    letter-spacing: -0.05em;
 }
 
 p {

@@ -12,12 +12,14 @@ h1 {
   font-weight: 700;
   color: #414141;
   font-size: 1.2em;
+  letter-spacing: -0.03em;
 }
 
 h2 {
   color: #afafaf;
   font-size: 0.81em;
   font-weight: 400;
+  letter-spacing: -0.05em;
 }
 
 p {
@@ -86,6 +88,99 @@ main {
 
 .btn-green {
   background-color: #8aba00;
+}
+
+.btn-noshadow {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-round-l {
+  width: 2em;
+  height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.btn-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(1em, 1em);
+          transform: translate(1em, 1em);
+}
+
+.btn-small {
+  font-size: 0.625em;
+}
+
+.item-price h1 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.item-price span {
+  font-size: 0.6em;
+  padding-right: 0.5em;
+}
+
+.type-gender {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.625em;
+  background-color: #c50308;
+  display: inline-block;
+  padding: 0.6em 1em;
+  margin: 0;
+  border-radius: 0.5em;
+}
+
+.profile-image {
+  width: 1.66em;
+  height: 1.66em;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+}
+
+.profile-image img {
+  display: block;
+  width: 100%;
+}
+
+.profile-title {
+  background-color: #afafaf;
+  border-radius: 0.31em;
+  color: #fff;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  font-size: 0.35em;
+  margin: 0;
+}
+
+.profile-user {
+  margin: 0;
 }
 
 .divider {
@@ -424,8 +519,8 @@ main {
   display: block;
   width: 100%;
   border-radius: 0 0 1.375em 1.375em;
-  -webkit-box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
 }
 
 .section-6 .description-wrap {
@@ -439,6 +534,97 @@ main {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#F3F3F3));
   background-image: linear-gradient(0deg, #fff 0%, #F3F3F3 100%);
   height: 100%;
+}
+
+.section-6 .description-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 2em 1em 0 1em;
+}
+
+.section-6 .description-header h1 {
+  margin: 0;
+}
+
+.section-6 .description-header h2 {
+  margin: 0;
+}
+
+.section-6 .description-body {
+  padding: 0.5em 1em;
+}
+
+.section-6 .description-details {
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-6 .description-details > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+}
+
+.section-6 .description-details > div:not(:last-child) {
+  border-right: thin rgba(0, 0, 0, 0.1) solid;
+}
+
+.section-6 .description-buynow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-6 .description-seller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-6 .profile-details {
+  margin-left: 0.5em;
+}
+
+.section-6 .divider-dark {
+  margin: 1em 0;
+}
+
+.section-6 .description-comments {
+  padding: 0 1em;
+}
+
+.section-6 .description-comments h1 {
+  font-size: 0.75em;
+  color: #696969;
+  text-align: center;
+}
+
+.section-6 .description-comments .pure-form input[type=text] {
+  border: thin rgba(0, 0, 0, 0.1) solid;
 }
 
 .section-7 {
