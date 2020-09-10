@@ -76,25 +76,40 @@
 
 .section-4 {
     background-color: $light-color;
-    padding: 0.6em;
+    padding: 1em 0.6em;
 
     .catergory {
         background-image: $gray-type-gradient;
         border-radius: $m-border-radius;
         position: relative;
+        height: 9.56em;
+        display: flex;
+        justify-content: center;
+        
+        &:not(:last-child) {
+            margin-bottom: 0.8em;
+        }
 
         .catergory-title {
             position: absolute;
             top: 0;
             right: 0;
+            transform: translate(-1.1em, 1.1em);
+
+            h1 {
+                color: $med-gray;
+            }
         }
 
         .catergory-image {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 0.5em;
 
             img {
                 display: block;
                 width: 70%;
-                margin: 0 auto;
             }
         }
     }
