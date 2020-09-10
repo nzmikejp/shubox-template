@@ -174,6 +174,62 @@ main {
   border-radius: 0.5em;
 }
 
+.listing-item {
+  width: 100%;
+  padding: 0.5em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#F3F3F3));
+  background-image: linear-gradient(180deg, #fff 0%, #F3F3F3 100%);
+  border-radius: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.listing-item:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.listing-item .listing-description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+}
+
+.listing-item .listing-image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 8em;
+          flex: 0 0 8em;
+  height: 8em;
+  overflow: hidden;
+  border-radius: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.1);
+          box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.listing-item .listing-image img {
+  display: block;
+  height: 8em;
+}
+
+.listing-item .listing-info {
+  padding-right: 0.5em;
+}
+
+.listing-item .listing-info h1 {
+  margin: 0.5em 0 0 0;
+}
+
+.listing-item .listing-info h2 {
+  margin: 0;
+}
+
 .profile-image {
   width: 1.66em;
   height: 1.66em;
@@ -734,6 +790,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  padding: 0 0.8em;
 }
 
 .section-7 .header {
@@ -769,6 +826,30 @@ main {
 .section-7 .profile-image img {
   display: block;
   width: 100%;
+}
+
+.section-7 .listing-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-7 .item-price {
+  margin-right: 1em;
+  padding-right: 1em;
+  border-right: thin rgba(0, 0, 0, 0.1) solid;
+}
+
+.section-7 .listing-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .section-8 {
