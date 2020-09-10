@@ -443,6 +443,27 @@ main {
   padding-right: 1em;
 }
 
+.section-5 .listing .listing-content .price span {
+  font-weight: bold;
+}
+
+.section-5 .listing .listing-content .gender {
+  display: row;
+  padding: 4px 12px;
+  position: absolute;
+  width: 59px;
+  height: 23px;
+  background-color: #c50308;
+  border-radius: 0.25em;
+}
+
+.section-5 .listing .listing-content .gender p {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .section-5 .listing .listing-image {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40%;
@@ -456,12 +477,6 @@ main {
   height: 8.6em;
   left: 200px;
   top: 38px;
-}
-
-.section-5 .listing .listing-user {
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .section-6 {

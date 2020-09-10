@@ -140,6 +140,26 @@
                     }
 
             }
+
+            .price{
+                span{
+                    font-weight: bold;
+                }
+            }
+            .gender{
+                display: row;
+                padding: 4px 12px;
+                position: absolute;
+                width: 59px;
+                height: 23px;
+                background-color: $red-accent;
+                border-radius: $type-border-radius;
+
+                p{
+                    display: block;
+                    align-items: center;
+                }
+            }
         }
 
         .listing-image{
@@ -154,15 +174,9 @@
                 top: 38px;
             }
         }
-        .listing-user{
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
+      }
 
     }
-
-}
 
 .section-6 {
     background-color: orange;
