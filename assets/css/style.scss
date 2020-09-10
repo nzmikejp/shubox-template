@@ -228,7 +228,48 @@
 }
 
 .section-7 {
-    background-color: gray;
+    background-color: $light-color;
+
+    .container {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+    
+    .header {
+        background-image: $gray-item-gradient;
+        width: 100%;
+        text-align: center;
+        border-radius: $l-border-radius-bottom;
+        padding: 1.5em 0 1em 0;
+        margin-bottom: 1em;
+        
+        h1 {
+            color: $dark-gray;
+            margin: 0;
+            padding-top: 0.5em;
+        }
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .divider-dark {
+        margin: 1em;
+    }
+
+    .profile-image {
+        width: 4.5em;
+        height: 4.5em;
+        margin: 0 auto;
+    
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
 }
 
 .section-8 {

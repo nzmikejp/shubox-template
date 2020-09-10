@@ -57,6 +57,13 @@
     transform: translate(1em, 1em);
 }
 
+.btn-settings {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-1em, 1em);
+}
+
 .btn-small {
     font-size: 0.625em;
 }

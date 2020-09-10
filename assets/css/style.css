@@ -140,6 +140,14 @@ main {
           transform: translate(1em, 1em);
 }
 
+.btn-settings {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(-1em, 1em);
+          transform: translate(-1em, 1em);
+}
+
 .btn-small {
   font-size: 0.625em;
 }
@@ -711,7 +719,56 @@ main {
 }
 
 .section-7 {
-  background-color: gray;
+  background-color: #fff;
+}
+
+.section-7 .container {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.section-7 .header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#F3F3F3));
+  background-image: linear-gradient(180deg, #fff 0%, #F3F3F3 100%);
+  width: 100%;
+  text-align: center;
+  border-radius: 0 0 1.375em 1.375em;
+  padding: 1.5em 0 1em 0;
+  margin-bottom: 1em;
+}
+
+.section-7 .header h1 {
+  color: #414141;
+  margin: 0;
+  padding-top: 0.5em;
+}
+
+.section-7 .header h2 {
+  margin: 0;
+}
+
+.section-7 .divider-dark {
+  margin: 1em;
+}
+
+.section-7 .profile-image {
+  width: 4.5em;
+  height: 4.5em;
+  margin: 0 auto;
+}
+
+.section-7 .profile-image img {
+  display: block;
+  width: 100%;
 }
 
 .section-8 {
