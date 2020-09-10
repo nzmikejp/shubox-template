@@ -134,6 +134,17 @@
             margin: 0;
         }
     }
+
+    .listing-price {
+        display: flex;
+        align-items: center;
+    }
+
+    .item-price {
+        margin-right: 1em;
+        padding-right: 1em;
+        border-right: thin rgba(0,0,0,0.1) solid;
+    }
 }
 
 .profile-image {
