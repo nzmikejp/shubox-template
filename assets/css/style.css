@@ -111,6 +111,27 @@ main {
   color: #fff;
 }
 
+.btn-round-s {
+  width: 1.8em;
+  height: 1.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  border: 2px #fff solid;
+}
+
+.btn-font-s {
+  font-size: 0.75em;
+}
+
 .btn-back {
   position: absolute;
   top: 0;
@@ -625,6 +646,68 @@ main {
 
 .section-6 .description-comments .pure-form input[type=text] {
   border: thin rgba(0, 0, 0, 0.1) solid;
+}
+
+.section-6 .description-comments .pure-form {
+  width: 100%;
+}
+
+.section-6 .description-comments .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-6 .description-comments .form-group input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+
+.section-6 .description-comments .btn-round-l {
+  border: none;
+  margin-left: 0.5em;
+}
+
+.section-6 .description-comment-dialogue {
+  border: thin rgba(0, 0, 0, 0.1) solid;
+  border-radius: 0.31em;
+  padding: 0.5em;
+}
+
+.section-6 .dialogue-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.section-6 .dialogue-comment:not(:last-child) {
+  border-bottom: thin rgba(0, 0, 0, 0.1) solid;
+}
+
+.section-6 .dialogue-comment .profile-image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+}
+
+.section-6 .dialogue-comment .profile-comment {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  margin-left: 1em;
+}
+
+.section-6 .dialogue-comment .btn-round-s {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(70%, -50%);
+          transform: translate(70%, -50%);
 }
 
 .section-7 {

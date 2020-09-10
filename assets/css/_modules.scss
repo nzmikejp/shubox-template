@@ -35,6 +35,21 @@
     color: $light-color;
 }
 
+.btn-round-s {
+    width: 1.8em;
+    height: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: $light-color;
+    border: 2px $light-color solid;
+}
+
+.btn-font-s {
+    font-size: 0.75em;
+}
+
 .btn-back {
     position: absolute;
     top: 0;
