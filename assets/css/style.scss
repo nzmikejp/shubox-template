@@ -1,6 +1,6 @@
 @import './base', './layout', './modules';
 
-.section-1 {
+.route-start {
     @include intro-images(28.53em, 101%);
     background-color: $dark-color; 
     background-image: url('../images/harftone-bg.svg'),
@@ -22,7 +22,7 @@
 }
 
 
-.section-2 {
+.route-user-login {
     @include intro-images(25.18em, 103%);
     background-color: $dark-color; 
     background-image: url('../images/harftone-bg.svg'),
@@ -48,7 +48,7 @@
     }
 }
 
-.section-3 {
+.route-create-user {
     @include intro-images(25.18em, 101%);
     background-color: $dark-color; 
     background-image: url('../images/harftone-bg.svg'),
@@ -74,7 +74,7 @@
     }
 }
 
-.section-4 {
+.route-types {
     background-color: $light-color;
     padding: 1em 0.6em;
 
@@ -115,7 +115,7 @@
     }
 }
 
-.section-5 {
+.route-listings {
     background-color: $light-color;
 
     .container {
@@ -127,7 +127,7 @@
     }
 }
 
-.section-6 {
+.route-listing {
     position: relative;
 
     .description-image {
@@ -272,7 +272,7 @@
 
 }
 
-.section-7 {
+.route-user {
     background-color: $light-color;
 
     .container {
@@ -325,7 +325,7 @@
     }
 }
 
-.section-8 {
+.route-create-listing {
     background-color: $light-color;
 
     .container {
@@ -379,7 +379,7 @@
     }
 }
 
-.section-9 {
+.route-update-listing {
     background-color: $light-color;
 
     .container {
@@ -433,7 +433,7 @@
     }
 }
 
-.section-10 {
+.route-update-user {
     background-color: $light-color;
 
     .container {
