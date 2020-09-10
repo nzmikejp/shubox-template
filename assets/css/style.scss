@@ -75,7 +75,29 @@
 }
 
 .section-4 {
-    background-color: red;
+    background-color: $light-color;
+    padding: 0.6em;
+
+    .catergory {
+        background-image: $gray-type-gradient;
+        border-radius: $m-border-radius;
+        position: relative;
+
+        .catergory-title {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .catergory-image {
+
+            img {
+                display: block;
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
 }
 
 .section-5 {

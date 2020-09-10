@@ -599,7 +599,27 @@ main {
 }
 
 .section-4 {
-  background-color: red;
+  background-color: #fff;
+  padding: 0.6em;
+}
+
+.section-4 .catergory {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(26.48%, #fff), color-stop(75.83%, #F7F7F7), color-stop(78.77%, #F0F0F0), to(#E2E2E2));
+  background-image: linear-gradient(180deg, #fff 26.48%, #F7F7F7 75.83%, #F0F0F0 78.77%, #E2E2E2 100%);
+  border-radius: 0.5em;
+  position: relative;
+}
+
+.section-4 .catergory .catergory-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.section-4 .catergory .catergory-image img {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .section-5 {
